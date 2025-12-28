@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0f14;
+  color: #ffffff;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("img/hero.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,.6), rgba(0,0,0,.9));
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero h1 span {
+  color: #00ffd5;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* SOCIAL ICON */
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 28px;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ffd5;
+  transform: scale(1.2);
+}
+
+/* PROFILE */
+.profile {
+  padding: 80px 15%;
+  text-align: center;
+  background: linear-gradient(135deg, #14141c, #0f0f14);
+}
+
+.profile h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00ffd5;
+}
+
+.profile p {
+  max-width: 900px;
+  margin: 15px auto;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* SERVICE */
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 450px;
+}
+
+.service-img {
+  flex: 1;
+  background: url("img/service.jpg") center/cover no-repeat;
+}
+
+.service-text {
+  flex: 1;
+  padding: 60px;
+  background: #14141c;
+}
+
+.service-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #00ffd5;
+}
+
+.service-text p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #00ffd5;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00cfa9;
+}
+
+/* FOOTER */
+footer {
+  padding: 25px;
+  text-align: center;
+  background: #0b0b10;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .profile {
+    padding: 60px 10%;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+
+  .service-text {
+    padding: 40px;
+  }
+}
